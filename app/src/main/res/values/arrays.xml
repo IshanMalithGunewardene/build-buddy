@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="labour_status_values">
+        <item>@string/available</item>
+        <item>@string/not_available</item>
+    </string-array>
+
+    <string-array name="labour_category_values">
+        <item>@string/electrician</item>
+        <item>@string/plumber</item>
+        <item>@string/carpenter</item>
+        <item>@string/welder</item>
+        <item>@string/mason</item>
+        <item>@string/mechanic</item>
+        <item>@string/painter</item>
+        <item>@string/roofer</item>
+        <item>@string/gardening</item>
+    </string-array>
+</resources>

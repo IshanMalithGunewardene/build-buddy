@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".client.ClientDashboardActivity">
+
+    <ImageButton
+        android:id="@+id/logout_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/logout"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/logout_button" />
+
+    <ImageView
+        android:id="@+id/build_buddy_logo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_logo"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/build_buddy" />
+
+    <TextView
+        android:id="@+id/nearby_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/nearby_supporter"
+        android:textColor="#9AA0A6"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/build_buddy_logo" />
+
+    <GridLayout
+        android:id="@+id/services_grid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="24dp"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nearby_title">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/electrician_icon"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:background="@drawable/bg_service_chip"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                tools:srcCompat="@drawable/electrician" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/electrician"
+                android:textSize="11sp"
+                android:textColor="#3C4043" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/plumber_icon"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:background="@drawable/bg_service_chip"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                tools:srcCompat="@drawable/plumber" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/plumber"
+                android:textSize="11sp"
+                android:textColor="#3C4043" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/carpenter_icon"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:background="@drawable/bg_service_chip"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                tools:srcCompat="@drawable/carpenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/carpenter"
+                android:textSize="11sp"
+                android:textColor="#3C4043" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/welder_icon"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:background="@drawable/bg_service_chip"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                tools:srcCompat="@drawable/welder" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/welder"
+                android:textSize="11sp"
+                android:textColor="#3C4043" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/mason_icon"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:background="@drawable/bg_service_chip"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                tools:srcCompat="@drawable/mason" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/mason"
+                android:textSize="11sp"
+                android:textColor="#3C4043" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/mechanic_icon"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:background="@drawable/bg_service_chip"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                tools:srcCompat="@drawable/mechanic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/mechanic"
+                android:textSize="11sp"
+                android:textColor="#3C4043" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/painter_icon"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:background="@drawable/bg_service_chip"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                tools:srcCompat="@drawable/painter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/painter"
+                android:textSize="11sp"
+                android:textColor="#3C4043" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/roofer_icon"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:background="@drawable/bg_service_chip"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                tools:srcCompat="@drawable/roofer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/roofer"
+                android:textSize="11sp"
+                android:textColor="#3C4043" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/gardening_icon"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:background="@drawable/bg_service_chip"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                tools:srcCompat="@drawable/gardening" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/gardening"
+                android:textSize="11sp"
+                android:textColor="#3C4043" />
+        </LinearLayout>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
